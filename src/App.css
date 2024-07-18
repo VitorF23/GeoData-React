@@ -1,0 +1,100 @@
+#root {
+  background-color: rgb(215, 218, 231);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 35px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 25px;
+  color: white;
+}
+
+header {
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.country span {
+  /* border: 1px solid red; */
+  position: relative;
+  left: 60px;
+  top: 90px;
+  font-size: 25px;
+  color: rgb(3, 3, 3);
+  padding: 5px;
+}
+
+.country > div > span {
+  background-color: rgb(238, 234, 229);
+  border-radius: 3px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(150px, auto);
+}
+
+.country img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  margin: 50px;
+  cursor: pointer;
+}
+
+/* Styles pour le modal */
+.modal-root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  height: 170px;
+  width: 450px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.modal button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.modal h2 {
+  font-size: 25px;
+  color: rgb(86, 123, 162);
+  margin-bottom: 10px;
+}
+
+.modal span {
+  font-size: 20px;
+}
+
+.modal p {
+  margin-bottom: 8px;
+}
