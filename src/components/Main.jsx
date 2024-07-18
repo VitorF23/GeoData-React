@@ -23,7 +23,6 @@ const Main = () => {
             return 0;
           }
         });
-        console.log(sortedData);
         setCountriesData(sortedData);
         setIsLoading(false);
       } catch (error) {
